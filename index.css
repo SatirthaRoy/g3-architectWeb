@@ -222,15 +222,104 @@ nav ul li a {
   padding: 32px;
   }
 
-  .poster h2 small {
-    display: block;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-  }
+.poster h2 small {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
 
+  /* facts section styles */
+.facts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+  margin: 135px auto;
+}
+
+.facts h3 {
+  margin-bottom: 18px;
+}
+
+.facts p {
+  margin-bottom: 75px;
+}
+
+.deeds {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 37.5px;
+}
+
+.deeds div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  padding: 45px 36px;
+}
+
+.deeds div img {
+  max-width: 45px;
+}
+
+.deeds div h2 {
+  color: #424242;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* sponsor sections styles */
+
+.sponsor {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.sponsor p {
+  width: 37%;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+.sponsor div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sponsor div img {
+  max-width: 166px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  background-color: #FFF4E7;
+  margin: 130px auto;
+  padding: 40px 0px;
+}
+
+footer small {
+  text-align: center;
+  color: #424242;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* hide */
 
 .hide {
   display: none;
@@ -270,7 +359,7 @@ nav ul li a {
   }
 
   .feature {
-    width: 98%;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -278,6 +367,29 @@ nav ul li a {
     width: 90%;
   }
 
+  .facts {
+    width: 99%;
+  }
+
+  .deeds {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .sponsor {
+    width: 100%;
+  }
+
+  .sponsor div {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
 
 /* medium size devices */
@@ -293,5 +405,29 @@ nav ul li a {
 
   .poster h2 {
     left: -50px;
+  }
+
+  .facts {
+    width: 95%;
+  }
+
+  .deeds {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px;
+  }
+
+  .sponsor {
+    width: 95%;
+  }
+
+  .sponsor div {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer {
+    width: 95%;
   }
 }
