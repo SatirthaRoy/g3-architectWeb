@@ -331,7 +331,7 @@ footer small {
 /* smaller devices */
 
 @media screen and (max-width: 576px) {
-  .container {
+  .container, .intro p, .feature, .sponsor, footer{
     width: 100%;
   }
 
@@ -341,10 +341,6 @@ footer small {
 
   nav ul {
     flex-direction: column;
-  }
-
-  .intro p {
-    width: 100%;
   }
 
   /* responsive sections */
@@ -359,7 +355,6 @@ footer small {
   }
 
   .feature {
-    width: 100%;
     flex-direction: column;
   }
 
@@ -377,18 +372,10 @@ footer small {
     padding: 0px;
   }
 
-  .sponsor {
-    width: 100%;
-  }
-
   .sponsor div {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-  }
-
-  footer {
-    width: 100%;
   }
 }
 
@@ -399,16 +386,12 @@ footer small {
     flex-direction: column;
   }
 
-  .feature {
+  .feature, .facts, .sponsor, footer {
     width: 95%;
   }
 
   .poster h2 {
     left: -50px;
-  }
-
-  .facts {
-    width: 95%;
   }
 
   .deeds {
@@ -417,17 +400,9 @@ footer small {
     padding: 0px;
   }
 
-  .sponsor {
-    width: 95%;
-  }
-
   .sponsor div {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-  }
-
-  footer {
-    width: 95%;
   }
 }
